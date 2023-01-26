@@ -25,11 +25,19 @@ def select_str_by_len_to_array(array, max_item_length):
     return select_array
 
 
+def check_input_is_natural_number(message):
+    number = input(message)
+    if number.isdigit() and int(number) > 0:
+        return number
+    else:
+        return check_input_is_natural_number(message)
+
+
 user_select = check_user_input('Введите: 1 - для использования массива по умолчанию. '
                                 + '2 - для ввода массива с клавиатуры. (1): ')
 
 if user_select == '2':
-    size_array = int(input("Введите размер массива: "))
+    size_array = int(check_input_is_natural_number("Введите размер массива: "))
     array = input_array_from_keyboard(size_array)
 else:
     array = default_array
