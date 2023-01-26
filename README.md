@@ -24,4 +24,5 @@
 удовлетворяющих условию задачи.
 
 
-Программа написана на языке Python, файл [main.py](main.py)
+Программа написана на 2 языках Python, файл [main.py](main.py) и C#, файл [C-Sharp/Program.cs](Program.cs).
+
